@@ -198,6 +198,27 @@ background-size: cover;
 
 /* style af cv.php slut*/
 
+/* style af kontakt.php */
+#kontakt_overskrift {
+  padding-top: 2em;
+}
+
+#kontakt_tekst {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#kontakt_billede {
+  margin-top: 3em;
+  background-image: url("feather.png");
+  background-position: center;
+  background-repeat: no-repeat;
+background-size: cover;
+  position: relative;
+}
+/* style af kontakt.php slut*/
+
  /* footer */
 footer {
   padding: 10px;
