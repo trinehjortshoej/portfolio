@@ -6,9 +6,17 @@
 </div>
 
    <div class="d-flex justify-content-center col-sm">
-     <a href="#" class="fa fa-facebook"></a>
-   <a href="#" class="fa fa-linkedin"></a>
+     <a href="https://www.facebook.com/profile.php?id=574654339" target="_blank">
+       <i class="fab fa-facebook-f fa-2x"></i>
+     </a>
+     <a href="https://www.linkedin.com/in/trine-hjortshøj-43686412b/" target="_blank">
+       <i class="fab fa-linkedin fa-2x"></i>
+     </a>
+<a href="https://github.com/trinehjortshoej target="_blank">
+  <i class="fab fa-github fa-2x"></i>
+</a>
  </div>
+
 </footer>
 </div>
 

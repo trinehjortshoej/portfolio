@@ -3,7 +3,7 @@
 
   <div class="p-2 col-2 col-sm-2 col-md-1 col-xl-1" id="logo_box">
         <a href="index.php">
-          <img src="img/logo.png" class="img-fluid" alt="Logo Trine Hjortshøj">
+          <img src="img/logo-th-200.png" class="img-fluid" alt="Logo trinehjortshoej.dk">
           </a>
         </div>
 
@@ -28,7 +28,7 @@
       </nav>
     </div> <!-- navigation slut -->
 
-  <div class="p-2 col-3" id="cta_header_box">
+  <div class="p-2 col-3">
     <a href="kontakt.php" class="btn" id="cta_header">Vi skal da arbejde sammen!</a>
   </div>
   </div> <!-- kasse til placering af indhold slut -->

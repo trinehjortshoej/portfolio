@@ -1,0 +1,28 @@
+/* style af kontakt.php */
+#kontakt_overskrift {
+  padding-top: 2em;
+}
+
+#kontakt_tekst {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 3em;
+}
+
+#kontakt_billede {
+  margin-top: 3em;
+  width: 80vh;
+  height: 60vh;
+  background-image: url("img/trinehjortshoej_profil4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 4px 4px 5px 2px #ccc;
+}
+
+#send_knap {
+  background-color: $mycolor;
+}
+/* style af kontakt.php slut*/

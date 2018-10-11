@@ -1,0 +1,25 @@
+/* style af cv.php */
+#cv_overskrift {
+  padding-top: 2em;
+}
+
+#cv_tekst {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#cv_billede {
+    margin-top: 3em;
+    width: 80vh;
+    height: 50vh;
+    background-image: url("img/trinehjortshoej_profil1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px 2px #ccc;
+  }
+
+/* style af cv.php slut*/

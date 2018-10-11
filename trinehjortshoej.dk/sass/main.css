@@ -1,52 +1,37 @@
 /* Styling af basale elementer  og variabler */
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   font-family: 'Dosis', helvetica, sans-serif; }
 
 p {
   font-weight: 100; }
 
-/* Div, bokse, elementer */
-/* include_header start*/
-.nav_li_p {
-  font-size: 1.3em; }
+a {
+  text-decoration: none; }
 
-#header_row {
-  width: 100%;
-  z-index: 1; }
-
-#header_row_index {
-  width: 100%;
-  z-index: 1;
-  background-color: #e9ecef; }
-
-#nav_box {
-  margin-left: 12em;
-  margin-top: 0.2em; }
-
-#cta_header {
-  display: none; }
-
-/* include_header slut */
 /* style af index.php */
-.jumbotron {
-  width: 100%;
-  padding-top: 25em; }
-
 #hero_img {
-  background-image: url("feather.png");
+  background-image: url("img/trinehjortshoej_profil2.jpg");
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  padding-top: 25em; }
 
 #hero_text {
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  color: white; }
 
 .index_button {
   background: #B7E2E0;
@@ -54,34 +39,14 @@ p {
   padding: 0.7em;
   text-align: center; }
 
+.fa-angle-double-down {
+  margin-left: 3px;
+  font-size: 0.9em; }
+
 #portfolio-section {
   height: auto;
   width: 100%;
   padding: 50px 0 105px 0; }
-
-.portfolio-section-header {
-  height: 100px;
-  width: 960px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.portfolio-section-header h1 {
-  font-size: 4em;
-  color: #B7E2E0; }
-
-.porfolio-section-text {
-  height: auto;
-  width: 960px;
-  margin: 0 auto; }
-
-.porfolio-section-text p {
-  font-size: 1.8em;
-  line-height: 1.8em; }
 
 .portfolio-section-filter {
   height: 100px;
@@ -103,17 +68,15 @@ p {
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s; }
-
-.portfolio-section-filter a:hover {
-  color: #B7E2E0; }
-
-.portfolio-section-filter a.current {
-  color: #B7E2E0; }
+  .portfolio-section-filter a:hover {
+    color: #B7E2E0; }
+  .portfolio-section-filter a.current {
+    color: #B7E2E0; }
 
 .portfolio-section-image-container {
   width: 960px;
   margin: 0 auto;
-  height: 510px; }
+  height: 530px; }
 
 .isotope-item {
   z-index: 2; }
@@ -124,7 +87,6 @@ p {
 
 .isotope,
 .isotope .isotope-item {
-  /* change duration value to whatever you like */
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
@@ -145,36 +107,59 @@ p {
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform; }
 
-.test-project {
-  height: 250px;
-  width: 182px;
-  background-color: #B7E2E0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 169px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
   margin-right: 10px;
   margin-bottom: 10px;
   cursor: pointer;
-  border-radius: 5px; }
+  border-radius: 15px; }
 
-.test-project h1 {
-  color: white;
-  font-size: 20px;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  text-transform: uppercase; }
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
-.test-project .fas {
-  font-size: 100px;
-  color: white;
-  margin-top: -70px; }
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #B7E2E0;
+  color: black;
+  border-radius: 15px; }
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.isotope_card {
+  border-radius: 15px; }
 
 /* style af index.php slut*/
 /* style af cv.php */
@@ -188,14 +173,67 @@ p {
 
 #cv_billede {
   margin-top: 3em;
-  background-image: url("feather.png");
+  width: 80vh;
+  height: 50vh;
+  background-image: url("img/trinehjortshoej_profil1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: absolute;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 5px 2px #ccc;
+  box-shadow: 4px 4px 5px 2px #ccc; }
 
 /* style af cv.php slut*/
-/* footer */
+/* style af kontakt.php */
+#kontakt_overskrift {
+  padding-top: 2em; }
+
+#kontakt_tekst {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 3em; }
+
+#kontakt_billede {
+  margin-top: 3em;
+  width: 80vh;
+  height: 60vh;
+  background-image: url("img/trinehjortshoej_profil4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 5px 2px #ccc;
+  box-shadow: 4px 4px 5px 2px #ccc; }
+
+#send_knap {
+  background-color: #B7E2E0; }
+
+/* style af kontakt.php slut*/
+/* Div, bokse, elementer */
+/* include_navbar start*/
+.nav_li_p {
+  font-size: 1.3em; }
+
+#header_row {
+  width: 100%;
+  z-index: 1; }
+
+#header_row_index {
+  width: 100%;
+  z-index: 1;
+  background-color: #e9ecef; }
+
+#nav_box {
+  margin-left: 12em;
+  margin-top: 0.2em; }
+
+#cta_header {
+  display: none; }
+
+/* include_navbar slut */
+/* include_footer */
 footer {
   padding: 10px;
   margin-top: 2em;
@@ -213,15 +251,24 @@ footer {
   .fa:hover {
     opacity: 0.7; }
 
-.fa-facebook {
-  background: white;
+.fab {
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-top: -7px; }
+
+.fa-facebook-f {
+  background: none;
   color: black; }
 
 .fa-linkedin {
-  background: white;
+  background: none;
   color: black; }
 
-/* footer slut */
+.fa-github {
+  background: none;
+  color: black; }
+
+/* include_footer slut */
 /* Media query size tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #nav_list {
@@ -252,20 +299,21 @@ footer {
   #nav_box {
     margin-left: 24em;
     margin-top: 2em; }
-  #cta_header-box {
-    margin-right: 2em; }
   #cta_header {
     background: #B7E2E0;
     margin-top: 2em;
     color: black;
     padding: 10px;
+    width: 180px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center;
+    -webkit-box-shadow: 4px 4px 5px 2px #ccc;
+    box-shadow: 4px 4px 5px 2px #ccc; } }
 
 /* Media query size big screen */
 @media screen and (min-width: 1440px) {

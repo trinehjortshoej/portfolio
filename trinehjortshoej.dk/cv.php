@@ -11,7 +11,7 @@ include 'include/include_navbar.php';
 </div>
 
 <div class="row">
-  <div class="col-md" id="cv_tekst">
+  <div class="col-md-5" id="cv_tekst">
     <h5>Multimediedesign studerende med erfaring</h4>
     <p>
           Min daglige gang er pt. på CPH Bussiness,
@@ -41,9 +41,11 @@ include 'include/include_navbar.php';
       <a href="#" class="btn index_button">Download mit CV</a>
       </div>
 
-<div class="col-sm" id="cv_billede">
-
-</div>
+      <div class="col-md-5">
+        <div class="img-fluid" id="cv_billede">
+        <p></p>
+        </div>
+      </div>
 
     </div>
 

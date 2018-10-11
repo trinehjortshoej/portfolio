@@ -1,0 +1,71 @@
+/* Div, bokse, elementer */
+
+/* include_navbar start*/
+.nav_li_p {
+  font-size: 1.3em;
+}
+
+#header_row {
+  width: 100%;
+  z-index: 1;
+}
+
+#header_row_index {
+  width: 100%;
+  z-index: 1;
+  background-color: #e9ecef;
+}
+
+#nav_box {
+    margin-left: 12em;
+    margin-top: 0.2em;
+}
+
+#cta_header{
+  display: none;
+
+}
+/* include_navbar slut */
+
+ /* include_footer */
+footer {
+  padding: 10px;
+margin-top: 2em;
+  width: 100%;
+  background: $mycolor;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.fab {
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-top: -7px;
+}
+
+.fa-facebook-f {
+    background: none;
+    color: black;
+}
+
+.fa-linkedin {
+    background: none;
+    color: black;
+}
+
+.fa-github {
+  background: none;
+  color: black;
+}
+/* include_footer slut */

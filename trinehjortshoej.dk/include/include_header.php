@@ -3,6 +3,17 @@
 <html lang="da">
 
     <head>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114113490-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114113490-1');
+      </script>
+
         <title>Trine Hjortshøj portfolio</title>
 
         <meta name="author" content="Trine Hjortshøj">
@@ -22,7 +33,7 @@
         <!-- Eget CSS stylesheet med media query -->
         <link rel="stylesheet" href="sass/main.css">
 
-      
+
     </head>
     <body>
 
